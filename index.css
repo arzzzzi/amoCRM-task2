@@ -4,6 +4,7 @@ body {
     max-width: 1440px;
     height: 100%;
     background: #0E1014;
+    margin: 0;
 }
 
 .logo {
@@ -326,14 +327,16 @@ footer {
     border-radius: 50%;
 }
 
-@media screen and (min-width: 375px) and (max-width: 833px) {
+@media screen and (min-width: 320px) and (max-width: 833px) {
     body {
         max-width: 833px;
+        width: 100%-48px;
     }
     header {
-        margin-left: 14px;
-        margin-right: 34px;
-        margin-top: 10px;
+        padding-left: 14px;
+        padding-right: 34px;
+        padding-top: 10px;
+        margin: 0;
         background-color: black;
     }
     footer {
@@ -346,6 +349,7 @@ footer {
         display: block;
     }
     .main_rmenu span {
+        display: inline;
         background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
         -webkit-background-clip: text;
         background-clip: text;
@@ -369,8 +373,8 @@ footer {
         display: none;
     }
     .blue_circle {
-        left: 350px;
-        top: 178px;
+        left: 310px;
+        top: 240px;
     }
     .phone {
         display: none;
@@ -394,5 +398,58 @@ footer {
     }
     .main_rmenu p {
         display: none;
+    }
+    .main_rp {
+        text-align: left;
+    }
+    footer p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #E4E5EA;
+    }
+    .heads h3 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #656566;
+    }
+    .heads {
+        display: block;
+    }
+    .menu_footright {
+        width: 190px;
+        margin-left: 10px;
+    }
+    .menu_foot {
+        display: flex;
+        justify-content: space-between;
+    }
+    button {
+        display: none;
+    }
+    .main_rmenu div h2 {
+        text-align: left;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .contacts {
+        text-align: left;
+    }
+    .contacts_div p {
+        text-align: left;
+    }
+    .footer_svgs {
+        left: -60px;
+    }
+    .welbex22 {
+        text-align: left;
+        margin-top: 15px;
     }
 }
