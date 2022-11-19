@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 body {
-    margin-left: 102px;
-    margin-right: 149px;
     max-width: 1440px;
     height: 100%;
     background: #0E1014;
@@ -43,6 +41,8 @@ header {
     display: flex;
     margin-top: 46px;
     position: relative;
+    margin-left: 102px;
+    margin-right: 149px;
 }
 
 .heads {
@@ -63,6 +63,10 @@ header {
     margin-right: 30px;
     margin-left: 30px;
     line-height: 0;
+}
+
+.main_rmenu span {
+    display: none;
 }
 
 .CRMint {
@@ -114,6 +118,8 @@ main {
     display: flex;
     margin-top: 130px;
     justify-content: space-between;
+    margin-left: 102px;
+    margin-right: 149px;
 }
 
 .main_rp {
@@ -162,11 +168,9 @@ main {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height */
     text-align: right;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    /* light text */
     color: #E4E5EA;
 }
 
@@ -213,6 +217,7 @@ footer p {
     display: flex;
     width: 400px;
     justify-content: space-between;
+    text-align: start;
 }
 
 .footer_svgs {
@@ -235,6 +240,8 @@ footer p {
 
 footer {
     margin-top: 120px;
+    margin-left: 102px;
+    margin-right: 149px;
 }
 
 .welbex22 {
@@ -243,12 +250,149 @@ footer {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    /* identical to box height */
     text-align: right;
-    /* light text */
     color: #E4E5EA;
 }
 
 .welbex22 span {
     text-decoration: underline;
+}
+
+.menu_foot p {
+    line-height: 0;
+    margin-bottom: 35px;
+}
+
+.left_circle {
+    position: absolute;
+    width: 311px;
+    height: 311px;
+    left: -102px;
+    top: 251px;
+    background: #961A1A;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+
+.header_circle {
+    position: absolute;
+    width: 259px;
+    height: 259px;
+    left: 602px;
+    top: -154px;
+    background: #833AB4;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+
+.violet_circle {
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    left: 365px;
+    top: 83px;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+}
+
+.blue_circle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 868px;
+    top: -2px;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+    filter: blur(5px);
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+}
+
+.mini_circle {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 851px;
+    top: 547px;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    filter: blur(2.5px);
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 375px) and (max-width: 833px) {
+    body {
+        max-width: 833px;
+    }
+    header {
+        margin-left: 14px;
+        margin-right: 34px;
+        margin-top: 10px;
+        background-color: black;
+    }
+    footer {
+        margin-left: 14px;
+        margin-right: 34px;
+    }
+    main {
+        margin-left: 14px;
+        margin-right: 34px;
+        display: block;
+    }
+    .main_rmenu span {
+        background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .main__p {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .grad__p {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .mini_circle {
+        display: none;
+    }
+    .header_circle {
+        left: 100px;
+    }
+    .violet_circle {
+        display: none;
+    }
+    .blue_circle {
+        left: 350px;
+        top: 178px;
+    }
+    .phone {
+        display: none;
+    }
+    .svgs {
+        display: none;
+    }
+    .CRMint {
+        display: none;
+    }
+    .menu_important p {
+        font-size: 14px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .logo {
+        display: none;
+    }
+    .cetificate {
+        display: none;
+    }
+    .main_rmenu p {
+        display: none;
+    }
 }
